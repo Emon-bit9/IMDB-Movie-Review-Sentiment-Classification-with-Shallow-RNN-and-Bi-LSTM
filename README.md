@@ -11,7 +11,7 @@ However, large datasets like ours often conceal repetitive data, which can signi
 
 Therefore, after loading the IMDB dataset using pandas:
 - Firstly, we check if the data is balanced by plotting the unique sentiment labels on a pie chart. We found a balanced result.
-![Performance of Shallow Model](assets/shallow_classification_report.png)
+![Condition_of_Dataset](assets/Condition_of_Dataset.png)
 - Secondly, we searched for unique texts within the reviews’ column and removed the duplicate ones.
 
 Now we can finally start working on our unique set of data.
@@ -32,30 +32,30 @@ As instructed, we built our first model with one embedding layer and two dense l
 We received the following results, evaluating the performance of our shallow model. The **F1 score** we received at different runtimes ranged from **74%–75%**.
 
 **Figure: Performance of Shallow Model**  
-![Figure: Performance of Shallow Model](assets/Performance of Shallow Model.png)
+![Performance of Shallow Model](assets/Performance_of_Shallow_Model.png)
 
 Observing our training and validation accuracy curves, we deduced that our shallow model is a bit **overfitting**, but we couldn’t get better results by changing the batch size or dropout rate. So we decided to stick to it.
 
 **Figure: Training and Validation Accuracy Graph of Shallow Model**  
-![Figure: Training and Validation Accuracy Graph of Shallow Model](assets/Training and Validation Accuracy Graph of Shallow Model.png)
+![Training and Validation Accuracy Graph of Shallow Model](assets/Training_and_Validation_Accuracy_Graph_of_Shallow_Model.png)
 
 ### Unidirectional LSTM Model
 Now we implement a **Unidirectional LSTM** model. The Embedding Layer and Output Layer of the model remain the same as the previous one. Only the second dense layer is replaced with an **LSTM** layer in this model. **30% dropout** and **batch size = 200** provide us with a satisfactory result. We received an **F1 accuracy of 86%–87%** here, which is significantly higher than that of the Shallow model. Introducing gated recurrence relation to the model really left us with an impressive improvement.
 
 **Figure: Performance of Unidirectional LSTM Model**  
-![Figure: Performance of Unidirectional LSTM Model](assets/Figure: Performance of Unidirectional LSTM Model.png)
+![Performance of Unidirectional LSTM Model](assets/Performance_of_Unidirectional_LSTM_Model.png)
 
 **Figure: Training and Validation Accuracy Graph of Unidirectional LSTM Model**  
-![Figure: Training and Validation Accuracy Graph of Unidirectional LSTM Model](assets/Training and Validation Accuracy Graph of Unidirectional LSTM Model.png)
+![Training and Validation Accuracy Graph of Unidirectional LSTM Model](assets/Training_and_Validation_Accuracy_Graph_of_Unidirectional_LSTM_Model.png)
 
 ### Bidirectional LSTM Model
 Now we implement our final **Bidirectional LSTM** model. The Embedding Layer and Output Layer of the model too remains the same as the shallow model. Only the second dense layer is replaced with a **Bidirectional LSTM** layer in this model. **10% dropout** and **batch size = 200** provide us with a satisfactory result. We received an **F1 accuracy of 86%–87%** here. This model performed as good as the unidirectional LSTM one. In some runtimes it provided up to **88% accuracy**.
 
 **Figure: Performance of Bidirrectional LSTM Model**  
-![Figure: Performance of Bidirrectional LSTM Model](assets/Figure: Performance of Bidirrectional LSTM Model.png)
+![Performance of Bidirrectional LSTM Model](assets/Performance_of_Bidirrectional_LSTM_Model.png)
 
 **Figure: Training and Validation Accuracy Graph of Bidirectional LSTM Model**  
-![Figure: Training and Validation Accuracy Graph of Bidirectional LSTM Model](assets/Training and Validation Accuracy Graph of Bidirectional LSTM Model.png)
+![Training and Validation Accuracy Graph of Bidirectional LSTM Model](assets/Training_and_Validation_Accuracy_Graph_of_Bidirectional_LSTM_Model.png)
 
 ## How to improve these results
 To further enhance the results of this project, several avenues for improvement can be explored. First and foremost, fine-tuning hyperparameters such as learning rates, dropout rates, epochs etc. could optimize model performance. Additionally, experimenting with more complex neural network architectures such as **unidirectional and bidirectional GRU** can bring us better performance accuracies. Not only that, as a GRU unit is lighter than an LSTM unit, it can be computationally more efficient and less time consuming. Incorporating **attention mechanisms** or exploring **ensemble methods** may unveil hidden patterns in the data.
