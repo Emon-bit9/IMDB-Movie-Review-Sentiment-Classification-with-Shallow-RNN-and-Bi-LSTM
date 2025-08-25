@@ -11,7 +11,9 @@ However, large datasets like ours often conceal repetitive data, which can signi
 
 Therefore, after loading the IMDB dataset using pandas:
 - Firstly, we check if the data is balanced by plotting the unique sentiment labels on a pie chart. We found a balanced result.
+
 ![Condition_of_Dataset](assets/Condition_of_Dataset.png)
+
 - Secondly, we searched for unique texts within the reviews’ column and removed the duplicate ones.
 
 Now we can finally start working on our unique set of data.
