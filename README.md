@@ -35,12 +35,14 @@ We received the following results, evaluating the performance of our shallow mod
 
   
 ![Performance of Shallow Model](assets/Performance_of_Shallow_Model.png)
+
 **Figure: Performance of Shallow Model**
 
 Observing our training and validation accuracy curves, we deduced that our shallow model is a bit **overfitting**, but we couldn’t get better results by changing the batch size or dropout rate. So we decided to stick to it.
 
  
 ![Training and Validation Accuracy Graph of Shallow Model](assets/Training_and_Validation_Accuracy_Graph_of_Shallow_Model.png)
+
 **Figure: Training and Validation Accuracy Graph of Shallow Model** 
 
 ### Unidirectional LSTM Model
@@ -48,10 +50,12 @@ Now we implement a **Unidirectional LSTM** model. The Embedding Layer and Output
 
   
 ![Performance of Unidirectional LSTM Model](assets/Performance_of_Unidirectional_LSTM_Model.png)
+
 **Figure: Performance of Unidirectional LSTM Model**
 
  
 ![Training and Validation Accuracy Graph of Unidirectional LSTM Model](assets/Training_and_Validation_Accuracy_Graph_of_Unidirectional_LSTM_Model.png)
+
 **Figure: Training and Validation Accuracy Graph of Unidirectional LSTM Model** 
 
 ### Bidirectional LSTM Model
@@ -59,10 +63,12 @@ Now we implement our final **Bidirectional LSTM** model. The Embedding Layer and
 
   
 ![Performance of Bidirrectional LSTM Model](assets/Performance_of_Bidirrectional_LSTM_Model.png)
+
 **Figure: Performance of Bidirrectional LSTM Model**
 
   
 ![Training and Validation Accuracy Graph of Bidirectional LSTM Model](assets/Training_and_Validation_Accuracy_Graph_of_Bidirectional_LSTM_Model.png)
+
 **Figure: Training and Validation Accuracy Graph of Bidirectional LSTM Model**
 
 ## How to improve these results
