@@ -3,13 +3,12 @@
  While humans can easily sense the meaning and emotion of a text in many circumstances, machines find it substantially more difficult. In this project, we have designed three Neural Network models for the task of text classification where we classify movie reviews.
 
 ## Dataset and Data Processing
-In the realm of Natural Language Processing (NLP), the integrity and efficiency of datasets wield profound influence over the performance of different Deep Recurrent Neural Network (RNN) models.
 
 The dataset is an **IMDB Dataset**, containing **50,000 reviews** along with their **sentiment** tags. All the reviews were tagged either **positive** or **negative** and our models are going to work on this very classification of (text) reviews.
 
-However, large datasets like ours often conceal repetitive data, which can significantly impact a model's effectiveness. Repetitive data not only burdens computational resources but also skews the learning process by introducing redundancy. Moreover, imbalanced datasets pose a challenge in machine learning because they contain a significant difference in the number of instances between different classes. This disproportion can adversely impact the learning process and model performance. Hence, it is a good idea to pre-processing and remove the redundant data and check in on the overall condition of the dataset.
+Large datasets like ours often conceal repetitive data, which can significantly impact a model's effectiveness. Repetitive data not only burdens computational resources but also skews the learning process by introducing redundancy. Moreover, imbalanced datasets pose a challenge in machine learning because they contain a significant difference in the number of instances between different classes. This disproportion can adversely impact the learning process and model performance. Hence, it is a good idea to pre-processing and remove the redundant data and check in on the overall condition of the dataset.
 
-Therefore, after loading the IMDB dataset using pandas:
+So, after loading the IMDB dataset using pandas:
 - Firstly, we check if the data is balanced by plotting the unique sentiment labels on a pie chart. We found a balanced result.
 
 ![Condition_of_Dataset](assets/Condition_of_Dataset.png)
