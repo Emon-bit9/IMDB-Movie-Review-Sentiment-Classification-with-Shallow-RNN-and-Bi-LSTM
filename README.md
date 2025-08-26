@@ -1,6 +1,6 @@
 # IMDB Movie Review Sentiment Classification with Shallow RNN and (Bi)LSTM
 
- While humans can easily sense the meaning and emotion of a text in many circumstances, machines find it substantially more difficult. In this project, we have designed three Neural Network models for the task of text classification where we classify movie reviews.
+While humans can easily sense the meaning and emotion of a text in many circumstances, machines find it substantially more difficult. In this project, we have designed three Neural Network models for the task of text classification where we classify movie reviews.
 
 ## Dataset and Data Processing
 
